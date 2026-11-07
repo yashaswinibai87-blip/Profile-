@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashaswini | Personal Portfolio</title>
+
+    <style>
+        /* Basic page styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        header {
+            background-color: #172554;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home section */
+        .home {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+        }
+
+        .home-text {
+            max-width: 550px;
+        }
+
+        .home-text h1 {
+            font-size: 45px;
+            color: #172554;
+        }
+
+        .home-text h2 {
+            color: #0284c7;
+            margin: 10px 0;
+        }
+
+        .home-text p {
+            margin: 15px 0;
+        }
+
+        /* Profile image */
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+            box-shadow: 0 5px 20px #999;
+        }
+
+        /* Common section styling */
+        section {
+            padding: 60px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* About section */
+        .about {
+            background-color: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* Education and skills cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 12px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skill {
+            background-color: white;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill-list span {
+            background: #dbeafe;
+            color: #172554;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects {
+            background-color: #eff6ff;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            background: white;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #172554;
+        }
+
+        /* Social media links */
+        .social a {
+            color: #0284c7;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .home {
+                text-align: center;
+                gap: 30px;
+            }
+
+            .home-text h1 {
+                font-size: 32px;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Yashaswini</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+
+        <div class="home-text">
+            <h1>Hello, I'm Yashaswini</h1>
+            <h2>BCA Student</h2>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I am a passionate BCA student who enjoys
+                learning programming and exploring new
+                technologies.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div>
+            <!-- Replace the image URL with your own photo -->
+            <img class="profile-img"
+            src="https://via.placeholder.com/250"
+            alt="Yashaswini Profile Photo">
+        </div>
+
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            My name is Yashaswini. I am a BCA student
+            interested in computer science and technology.
+            I enjoy learning new skills, improving my
+            knowledge and reading books.
+            My goal is to become a skilled professional
+            in the field of technology.
+        </p>
+    </section>
+
+    <!-- Education section -->
+    <section id="education">
+        <h2 class="section-title">My Education</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Bachelor of Computer Applications</h3>
+                <p>1st Year BCA Student</p>
+                <p>Sarvodhaya College</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skill" id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skill-list">
+            <span>C Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>Communication</span>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    Created a personal portfolio website
+                    using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Student Profile Card</h3>
+                <p>
+                    Designed a simple student profile
+                    card using HTML and CSS.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p><b>Name:</b> Yashaswini</p>
+        <p><b>Email:</b> yashaswinibai87@gmail.com</p>
+        <p><b>Phone:</b> 9980563498</p>
+        <p><b>Location:</b> Tumkur, Karnataka</p>
+        <p><b>Hobby:</b> Reading</p>
+
+        <a href="mailto:yashaswinibai87@gmail.com"
+        class="btn">Send Email</a>
+
+        <div class="social">
+            <p>Connect with me</p>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Yashaswini | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
